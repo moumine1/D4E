@@ -161,4 +161,20 @@ a, a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: inherit;
 }
+.allvideo{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.allvideo li{
+  list-style: none;
+  margin: 1%;
+}
+.allvideo img{
+  width: 250px;
+}
+iframe{
+  height: 35vw;
+  width: calc(35vw*16/9);
+}
 /*# sourceMappingURL=style.css.map */

@@ -14,12 +14,29 @@
 <body>
     <nav>
         <ul>
-            <a href="index.php"><li>Home</li></a>
+            <a href="index.php"><li><img src="" alt="D4E's Logo"></li></a>
+            <li><input type="search" name=""></li>
             <?php if(!isset($_SESSION['usersId'])) : ?>
                 <a href="signup.php"><li>Sign Up</li></a>
                 <a href="login.php"><li>Login</li></a>
             <?php else: ?>
                 <a href="./controllers/Users.php?q=logout"><li>Logout</li></a>
+                <a href="upload.php"><li>Upload</li></a>
             <?php endif; ?>
+            <li>
+                <select name="language">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="bg">&#1073;&#1098;&#1083;&#1075;&#1072;&#1088;&#1091;&#1089;&#1082;&#1072;</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <nav class="categories">
+        <ul>
+            <a href=""><li>Video Editing</li></a>
+            <a href=""><li>3D</li></a>
+            <a href=""><li>Graphic Design</li></a>
+            <a href=""><li>About Us</li></a>
         </ul>
     </nav>
